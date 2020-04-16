@@ -32,7 +32,7 @@ class TrafficLightPresenter {
     }
     
     // - Actions:
-    public func trafficLightColorSelected(colorName : (String)) {        
+    public func trafficLightColorSelected(colorName : (String)) {
         trafficLightService.getTrafficLight(colorName: colorName, callBack: { [weak self] trafficLight in
             if let trafficLight = trafficLight {
                 self?.trafficLightViewDelegate?.displayTrafficLight(description: trafficLight.description)

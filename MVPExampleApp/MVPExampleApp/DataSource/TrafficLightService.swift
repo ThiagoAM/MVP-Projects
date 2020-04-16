@@ -19,7 +19,7 @@ class TrafficLightService {
         ]
         if let foundTrafficLight = trafficLights.first(where: {$0.colorName == colorName}) {
             callBack(foundTrafficLight)
-        } else {            
+        } else {
             callBack(nil)
         }
     }
